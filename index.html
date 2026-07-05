@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Exchange -- Currency Converter</title>
+</head>
+
+<body class="py-8 px-4 bg-navy-blue text-dim-white font-serif min-h-screen flex justify-center items-center ">
+
+  <div id="main"
+    class="bg-navy-blue-deep w-full sm:w-[90%] md:w-[80%] lg:w0[70%] 2xl:w-[50%] h-auto border border-[#999]">
+
+    <header class="p-8 border-b border-b-[#999] sm:flex sm:justify-between sm:items-center">
+
+      <h1 class="text-[32px] font-extrabold font-sans">Exch<span class="text-my-yellow">ange</span></h1>
+
+      <div id="header-passage" class="text-[#999] text-[12px] mt-2 sm:mt-0">
+        <p>Live ECB Rates</p>
+        <p>Updated: <span id="date">--/--/----</span></p>
+      </div>
+    </header>
+
+    <main class="p-8">
+
+      <form id="form"
+        class=" flex gap-8 flex-col sm:flex-row sm:justify-between pb-8 border-dashed border-b border-b-[#999]">
+        <div id="from" class="grid grid-rows-auto gap-4 w-full">
+
+          <label for="from-currency" class="text-[12px] text-[#999]">From</label>
+
+          <select name="from" id="from-currency" class=" bg-navy-blue p-2 border border-[#999]">
+
+          </select>
+
+          <input name="from-amount" id="from-amount" type="number" min="0" value="0"
+            class="w-full bg-navy-blue p-2 h-16 border border-[#999]">
+
+        </div>
+
+        <div class="flex justify-center items-center">
+
+          <button type="button" id="swap-button"
+            class="text-2xl border border-[#999] p-4 w-12 h-12 rounded-[50%] flex justify-center items-center transition-transform duration-300 hover:rotate-180 hover:text-my-yellow hover:border-my-yellow hover:scale-105 active:scale-90 active:text-[#422d03]">
+
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </button>
+        </div>
+
+        <div id="to" class="grid grid-rows-auto gap-4 w-full">
+
+          <label for="to-currency" class="text-[12px] text-[#999]">To</label>
+
+          <select name="to" id="to-currency" class=" bg-navy-blue p-2 border border-[#999]">
+
+          </select>
+
+          <input readonly name="to-amount" id="to-amount" type="text" placeholder="Calculating..."
+            class="w-full bg-navy-blue p-2 h-16 border border-[#999]">
+        </div>
+      </form>
+
+      <section id="result" class="w-full h-16 pt-8">
+
+        <div id="result-passage">
+
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="p-8 pb-4 flex flex-col sm:flex-row justify-center items-center sm:justify-between">
+      <div>
+        &copy; Adeel Alam 2026
+      </div>
+
+      <address class="text-dim-white text-2xl">
+        <a href="https://www.github.com/Adeel-Alam-Git/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-github"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/adeel-me/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-linkedin"></i>
+        </a>
+
+        <a href="https://www.x.com/_adeel_alam/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-x-twitter"></i>
+        </a>
+
+        <a href="https://www.instagram.com/_adeel_alam/" target="_blank" rel="noopener noreferrer">
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </address>
+    </footer>
+
+  </div>
+
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>

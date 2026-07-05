@@ -1,0 +1,39 @@
+@import 'tailwindcss';
+
+@theme {
+    --color-navy-blue: #0B2545;
+    --color-navy-blue-deep: #07182F;
+    --color-my-yellow: #FFB627;
+    --color-dim-white: #F4F1EA;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: -1;
+    background-image: 
+        repeating-linear-gradient(0deg, #999 0 1px, transparent 1px 32px),
+        repeating-linear-gradient(90deg, #999 0 1px, transparent 1px 32px);
+    opacity: 40%;
+}
+
+i {
+    transition: transform 300ms ease, color 300ms ease;
+}
+
+i:hover {
+    transform: scale(1.1);
+    color: var(--color-my-yellow);
+}
+
+i:active {
+    transform: scale(0.9);
+    color: #422d03;
+}
+
+::selection {
+    background: var(--color-my-yellow);
+    color: #1a1a1a;
+}

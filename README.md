@@ -2,7 +2,7 @@
 
 A modern and responsive currency converter built with **HTML, JavaScript, Tailwind CSS, and Vite**. The application fetches real-time exchange rates from **ExchangeRate-API**, allowing users to quickly convert amounts between multiple international currencies.
 
-🔗 **Live Demo:** https://currency-exchange-app-30o.pages.dev//
+🔗 **Live Demo:** https://currency-exchange-app-30o.pages.dev/
 
 ---
 

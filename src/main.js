@@ -2,7 +2,6 @@ import './style.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { currencies } from './currencies.js';
 
-const BASE_URL = `https://v6.exchangerate-api.com/v6/${import.meta.env.VITE_EXCHANGE_API_KEY}/latest/` // BASE_URL + from currency code
 
 const selects = document.querySelectorAll("form div select");
 const resultPassage = document.querySelector("#result-passage");
@@ -23,7 +22,7 @@ class ApiError extends Error {
 const getExchangeRate = async (from, to) => {
     try {
 
-        const response = await fetch(`${BASE_URL}${from}`);
+        const response = await fetch(`/api/latest?base=${from}`);
 
         if (!response.ok) {
             throw new ApiError(`HTTP Error: ${response.status}`);

@@ -46,10 +46,10 @@ The project uses **Cloudflare Pages Functions as a serverless API layer** to sec
 
 ## 📸 Screenshots
 ### Desktop View
-![Screenshot 1](/src/assets/screenshot_01.png)
+![Desktop View](/src/assets/Screenshot_01.png)
 
 ### Mobile View
-![Screenshot 2](/src/assets/screenshot_02.png)
+![Mobile View](/src/assets/Screenshot_02.png)
 
 ---
 
